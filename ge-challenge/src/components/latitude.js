@@ -1,7 +1,7 @@
 import React from 'react';
 import {Card, Form, Button, Container, Row, Col} from 'react-bootstrap';
 
-const LongCard = (props) => {
+const LatCard = (props) => {
     return (
         <Container fluid>
             <Row>
@@ -10,10 +10,10 @@ const LongCard = (props) => {
                 
                 <Form>
                     <Form.Group controlId="formBasicEmail">
-                        <Form.Label>Longitude</Form.Label>
+                        <Form.Label>Latitude</Form.Label>
                         <Form.Control type="text"/>
                         <Form.Text className="text-muted">
-                        (example : -4.4203400)
+                        (example : 36.7201600)
                         </Form.Text>
                     </Form.Group>
 
@@ -29,4 +29,4 @@ const LongCard = (props) => {
     );
 };
 
-export default LongCard;
+export default LatCard;
