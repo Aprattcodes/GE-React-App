@@ -1,7 +1,8 @@
 import React from 'react';
-import {Card, Form, Container, Row, Col} from 'react-bootstrap';
+import {Card, Form, Container, Row, Col, Button} from 'react-bootstrap';
 
 const LongCard = (props) => {
+
     return (
         <Container fluid>
             <Row>
@@ -9,7 +10,7 @@ const LongCard = (props) => {
             <Card>
                 
                 <Form>
-                    <Form.Group controlId="formBasicEmail">
+                    <Form.Group controlId="formLong">
                         <Form.Label>Longitude</Form.Label>
                         <Form.Control type="text"/>
                         <Form.Text className="text-muted">
@@ -17,9 +18,6 @@ const LongCard = (props) => {
                         </Form.Text>
                     </Form.Group>
 
-                    {/* <Button variant="primary" type="submit">
-                        Next
-                    </Button> */}
                 </Form>
 
             </Card>

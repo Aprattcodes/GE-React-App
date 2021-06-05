@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, Form, Container, Row, Col} from 'react-bootstrap';
+import {Card, Form, Container, Row, Col, Button} from 'react-bootstrap';
 
 const LatCard = (props) => {
     return (
@@ -9,7 +9,7 @@ const LatCard = (props) => {
             <Card>
                 
                 <Form>
-                    <Form.Group controlId="formBasicEmail">
+                    <Form.Group controlId="formLat">
                         <Form.Label>Latitude</Form.Label>
                         <Form.Control type="text"/>
                         <Form.Text className="text-muted">
@@ -17,9 +17,6 @@ const LatCard = (props) => {
                         </Form.Text>
                     </Form.Group>
 
-                    {/* <Button variant="primary" type="submit">
-                        Next
-                    </Button> */}
                 </Form>
 
             </Card>
