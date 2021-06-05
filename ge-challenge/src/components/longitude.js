@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, Form, Button, Container, Row, Col} from 'react-bootstrap';
+import {Card, Form, Container, Row, Col} from 'react-bootstrap';
 
 const LongCard = (props) => {
     return (

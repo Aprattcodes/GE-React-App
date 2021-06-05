@@ -1,15 +1,19 @@
 import React, {useState} from 'react';
 import LongCard from './longitude';
 import LatCard from './latitude';
-import {Row, Col, FormControl, Button} from 'react-bootstrap';
+import {Row, Col, Button} from 'react-bootstrap';
 
-// const onSearch = () => {
-//     fetch(``)
-// }
+const onSearch = () => {
+    //fetch(`https://api.sunrise-sunset.org/json?${lat}&${long}`)
+    fetch('https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400')
+    .then((response) => response.json())
+    .then((result) => console.log(result));
+}
 
 const Coordinates = () => {
     const [long, setLong] = useState('');
     const [lat, setLat] = useState('');
+
     return(
         <>
             <Row>
@@ -45,7 +49,7 @@ const Coordinates = () => {
             <Row>
                 <Col>
                 {/* event handler for button click */}
-                <Button >Check Coordinates</Button>
+                <Button onClick={onSearch}>Check Coordinates</Button>
                 </Col>
             </Row>
         </>
