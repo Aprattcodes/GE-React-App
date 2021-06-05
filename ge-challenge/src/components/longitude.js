@@ -1,7 +1,7 @@
 import React from 'react';
 import {Card} from 'react-bootstrap';
 
-const longCard = (props) => {
+const LongCard = (props) => {
     return (
         <Card style={{width: '18rem'}}>
             <Card.Img variant="top" src="holder.js/100px180" />
@@ -12,4 +12,4 @@ const longCard = (props) => {
     );
 };
 
-export default longCard;
+export default LongCard;
